@@ -1,5 +1,5 @@
 <div class="container mx-auto p-4">
-  <div *ngFor="let todo of todos$ | async">
+  <div *ngFor="let todo of todosApi$ | async">
     <app-todo-item [todo]="todo"></app-todo-item>
   </div>
 </div>

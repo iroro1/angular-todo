@@ -8,10 +8,10 @@ import { Todo, TodoService } from '../../services/todo.service';
   styleUrl: './todo-list-api.component.css',
 })
 export class TodoListApiComponent implements OnInit {
-  todos$: Observable<Todo[]>;
+  todosApi$: Observable<Todo[]>;
 
   constructor(private todoService: TodoService) {
-    this.todos$ = this.todoService.todos$;
+    this.todosApi$ = this.todoService.todos$;
   }
 
   ngOnInit(): void {
