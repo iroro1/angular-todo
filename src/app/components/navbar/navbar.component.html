@@ -1,0 +1,33 @@
+<nav class="bg-slate-900 p-4 fixed w-full">
+  <div
+    class="container mx-auto flex flex-col md:flex-row justify-between items-center"
+  >
+    <h1 class="text-2xl font-bold mb-4 text-white">Angular Todo List</h1>
+
+    <ul class="flex space-x-4">
+      <li>
+        <a
+          routerLink="/"
+          exact
+          routerLinkActive="text-[tomato]"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="text-white"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a routerLink="/add" routerLinkActive="text-[tomato]" class="text-white"
+          >Add Todo</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/apicall"
+          routerLinkActive="text-[tomato]"
+          class="text-white"
+          >API Call</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

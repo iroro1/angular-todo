@@ -1,0 +1,13 @@
+<div
+  class="flex items-center justify-between p-2 bg-gray-100 my-2 rounded max-w-2xl mx-auto"
+>
+  <div class="flex items-center gap-2">
+    <input
+      type="checkbox"
+      [checked]="todo.completed"
+      (change)="toggleCompletion()"
+    />
+    <span [class.line-through]="todo.completed">{{ todo.title }}</span>
+  </div>
+  <button class="text-red-500" (click)="deleteTodo()">Delete</button>
+</div>
